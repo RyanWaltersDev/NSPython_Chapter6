@@ -40,4 +40,26 @@ for name in favorite_languages.keys():
 if 'bob' not in favorite_languages.keys():
     print("Bob, please take our poll!")
 
+# Sort keys alphabetically
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()}, thank you for taking our poll!")
+
+# Pull values only and print
+print("The following languages have been mentioned:")
+for language in favorite_languages.values():
+    print(language.title())
+
+# Pull and print values no duplicate
+print("The following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+    print(language.title())
+
+# List for poll TIY 6-6
+poll_names = ['michael', 'sarah', 'jebidiah', 'phil', 'bob', 'jen', 'brookie']
+for name in poll_names:
+    if name not in favorite_languages.keys():
+        print(f"{name.title()}, will you please take a moment for our poll?")
+    else:
+        print(f"Thank you {name.title()}! We have your poll answer.")
+
 # END OF PROGRAM
