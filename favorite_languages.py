@@ -62,4 +62,12 @@ for name in poll_names:
     else:
         print(f"Thank you {name.title()}! We have your poll answer.")
 
+# Define dictionary favorite_languages with lists
+favorite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python'],
+    }
+
 # END OF PROGRAM
