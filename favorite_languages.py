@@ -68,6 +68,20 @@ favorite_languages = {
     'sarah': ['c'],
     'edward': ['ruby', 'go'],
     'phil': ['python'],
+    'jimbob': [],
     }
+
+# For loop list in dictionary
+for name, languages in favorite_languages.items():
+    if len(languages) == 1:
+        print(f"\n{name.title()}'s favorite language is:")
+        print(f"\t{language.title()}")
+    elif len(languages) == 0:
+        print(f"\n{name.title()} doesn't have a favorite language. In fact, "
+            "we have no idea who this person is.")
+    else:
+        print(f"\n{name.title()}'s favorite languages are:")
+        for language in languages:
+            print(f"\t{language.title()}")
 
 # END OF PROGRAM
